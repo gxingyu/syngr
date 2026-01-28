@@ -1,10 +1,10 @@
-# Beyond Redundancy: Unleashing Cross-Modal Synergy Information for Generative Recommendation
+# SynGR: Unleashing the Potential of Cross-Modal Synergy for  Generative Recommendation
 
-This is the source code for the paper "Beyond Redundancy: Unleashing Cross-Modal Synergy Information for Generative Recommendation".
+This is the source code for the paper "SynGR: Unleashing the Potential of Cross-Modal Synergy for  Generative Recommendation".
 
 ## Abstract
 
-Generative Recommendation (GR) has become a prominent paradigm by modeling item recommendation as a sequence-to-sequence generation task. While recent work incorporates multimodal signals, their practical impact is often limited. Due to strong textual biases in Pre-trained Language Models, generative systems tend to rely on dominant modalities and underutilize complementary visual information, failing to capture synergistic semantics that arise from cross-modal interaction. To address this problem, We propose SynGR (Synergistic Generative Recommendation), a generative framework that explicitly promotes cross-modal synergy. By discouraging shortcut-driven reliance on unimodal cues and encouraging interaction across modalities, SynGR enables the model to learn representations that go beyond single-modality features. Extensive experiments on multiple real-world datasets show that SynGR consistently outperforms state-of-the-art GR methods.
+Generative Recommendation (GR) has emerged as a promising paradigm by formulating item recommendation as a sequence-to-sequence generation task over item identifiers. Recent studies have incorporated multimodal signals to provide richer token-level evidence for generation. However, existing approaches largely rely on alignmentcentric fusion and underexplore synergistic information across modalities. In practice, synergistic information plays a critical role in capturing emergent item properties that cannot be inferred from any single modality alone. Such properties encode intrinsic item semantics and guide user preferences, enabling models to move beyond surface-level feature matching. To address this limitation, we propose SynGR, a synergistic generative recommendation framework that explicitly encourages the exploitation of cross-modal dependencies during generation. By constraining overreliance on dominant modalities, SynGR enables the model to capture emergent item semantics beyond shared or modality-specific signals. Extensive experiments across three benchmark datasets demonstrate that SynGR achieves superior recommendation performance, with an average improvement of 9.01%.
 
 ## Setup
 
