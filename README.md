@@ -50,19 +50,16 @@ bash script/pretrain.sh
 bash finetune_mask.sh
 ```
 
-## Hyperparameter Search Space
+## Main Hyperparameter Space
 
 | Hyperparameter     | Search Space                                     |
 | ------------------ | ------------------------------------------------ |
-| learning rate      | [0.0001, 0.0005, 0.001]                          |
-| weight decay       | [0, 0.01, 0.1]                                   |
 | mask ratio         | [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1] |
 | warmup ratio       | [0, 0.05, 0.1]                                   |
 | contrastive weight | [0.001, 0.003, 0.005, 0.007, 0.009]              |
 | batch size         | [128, 256, 512]                                  |
-| feature dimension  | 256                                              |
 | temperature        | [0.01, 0.03, 0.05, 0.07, 0.09]                   |
-| epochs             | 200                                              |
+
 
 ## Acknowledgements
 
