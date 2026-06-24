@@ -14,6 +14,14 @@ Please first install the required dependencies:
 pip install -r requirements.txt
 ```
 
+CUDA == 12.1 
+
+PyTorch == 2.1.0 
+
+Transformers == 4.45.0 ( ⚠ **Note:** In our experiments, we found that if the `transformers` version is higher than `4.45.0`, the model’s metrics show a significant decline. Therefore, we strongly recommend strictly pinning this version when reproducing the results.) 
+
+Accelerate == 0.28.0
+
 ## Quick Start
 
 ### Data Processing
@@ -42,6 +50,20 @@ bash script/pretrain.sh
 bash finetune_mask.sh
 ```
 
-### Acknowledgements
+## Hyperparameter Search Space
+
+| Hyperparameter     | Search Space                                     |
+| ------------------ | ------------------------------------------------ |
+| learning rate      | [0.0001, 0.0005, 0.001]                          |
+| weight decay       | [0, 0.01, 0.1]                                   |
+| mask ratio         | [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1] |
+| warmup ratio       | [0, 0.05, 0.1]                                   |
+| contrastive weight | [0.001, 0.003, 0.005, 0.007, 0.009]              |
+| batch size         | [128, 256, 512]                                  |
+| feature dimension  | 256                                              |
+| temperature        | [0.01, 0.03, 0.05, 0.07, 0.09]                   |
+| epochs             | 200                                              |
+
+## Acknowledgements
 
 This work is implemented based on [MQL4GRec](https://github.com/zhaijianyang/MQL4GRec),  We sincerely thank the authors of these project for their valuable contributions to the open-source community.
