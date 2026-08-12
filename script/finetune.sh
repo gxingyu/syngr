@@ -8,7 +8,7 @@ Index_file=.index_lemb_256_dis_all_right.json
 Image_index_file=.index_vitemb_256_dis_all_right.json
 
 # Tasks='seqrec,seqimage,item2image,image2item,seqitem2image,seqimage2item'
-Tasks='seqrec,seqimage,seqitem2image,seqimage2item,item2image,image2item'
+Tasks='seqrec,seqimage,seqitem2image,seqimage2item,masktext,maskimg'
 Valid_task=seqrec
 Per_device_batch_size=2048
 Datasets='Arts'
